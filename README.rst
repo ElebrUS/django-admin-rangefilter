@@ -26,7 +26,7 @@ Use your favorite Python package manager to install the app from PyPI, e.g.
 
 Example:
 
-``pip install django-admin-rangefilter``
+``pip install git+https://github.com/ElebrUS/django-admin-rangefilter.git``
 
 
 Add ``rangefilter`` to ``INSTALLED_APPS``:
