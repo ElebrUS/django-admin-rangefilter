@@ -80,14 +80,11 @@ https://github.com/django/django/blob/stable/1.8.x/django/contrib/admin/template
     })
 </script>
 <div class="admindatefilter">
-    <form method="GET" action="." id="{{ choices.0.system_name }}-form">
         {{ spec.form }}
         {% for choice in choices %}
             <input type="hidden" id="{{ choice.system_name }}-query-string" value="{{ choice.query_string }}">
         {% endfor %}
-        <div class="controls">
-            <input type="submit" class="button" value="{% trans "Search" %}" onclick="datefilter_apply(event, '{{ choices.0.system_name }}-query-string', '{{ choices.0.system_name }}-form')">
+        <div class="controls text-center">
             <input type="reset" class="button" value="{% trans "Reset" %}" onclick="datefilter_reset('{{ choices.0.system_name }}-query-string')">
         </div>
-    </form>
 </div>
